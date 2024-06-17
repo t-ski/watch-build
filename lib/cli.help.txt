@@ -1,0 +1,12 @@
+Usage: npx watch <path:taget> <path:module> [--<arg:key>|-<arg:shorthand> *?]*
+
+Positionals:
+0 <path:taget>          Path to watch file target directory.
+1 <path:module>         Path to build module with a default function export:
+                        module.exports = (paths) => {}
+Flags:
+--once, -O              Build once, i.e. without future file change watch.
+
+Options:
+--interval, -I          Time between watch iterations in ms (default: 1000).
+--pattern, -P           Filename pattern filter (string) regex (default: ".*").

@@ -1,0 +1,26 @@
+{
+    "name": "@t-ski/watch-build",
+    "version": "0.1.0",
+    "description": "Generic file watch build interface.",
+    "author": "Thassilo Martin Schiepanski",
+	"homepage": "https://github.com/t-ski/watch-build#readme",
+    "keywords": [
+		"build", "watch", "portable"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/t-ski/watch-build.git"
+	},
+	"bugs": {
+		"url": "https://github.com/t-ski/watch-build/issues"
+	},
+	"main": "./lib/api.js",
+	"bin": {
+        "watch": "./lib/cli.js"
+    },
+    "files": [ "./lib/" ],
+    "scripts": {
+        "prepare": "curl -o min-test.js https://raw.githubusercontent.com/t-ski/min-test/main/min-test.js",
+		"test": "node ./min-test.js"
+    }
+}
